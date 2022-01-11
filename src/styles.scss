@@ -1,1 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: "princessSofia";
+  src: url("./assets/fonts/PrincessSofia-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "aYearWithoutRain";
+  src: url("./assets/fonts/kimberly-geswein_a-year-without-rain/AYearWithoutRain.ttf")
+    format("truetype");
+}
+
+html {
+  font-size: 18px;
+}
+
+body {
+  margin: 0 !important;
+  background-color: #d5c3f7;
+
+  & * {
+    font-family: "aYearWithoutRain", "arial", sans-serif;
+    color: #495057;
+  }
+}

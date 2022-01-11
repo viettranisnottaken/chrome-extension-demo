@@ -1,0 +1,26 @@
+<div class="abbreviation-wrapper">
+  <div>
+    <h2>Abbreviation Translator</h2>
+    <div class="p-field">
+      <input
+        class="abbreviation-input"
+        type="text"
+        aria-describedby="abbreviation-translator"
+        [formControl]="abbreviationsControl"
+      />
+      <small id="abbreviation-help"
+        >Enter however many abbreviations you want. (Ex: brb ily gtg)</small
+      >
+    </div>
+
+    <ul>
+      <ng-container
+        *ngFor="let translatedAbbreviation of translatedAbbreviations"
+      >
+        <li *ngIf="translatedAbbreviation">
+          {{ translatedAbbreviation }}
+        </li>
+      </ng-container>
+    </ul>
+  </div>
+</div>

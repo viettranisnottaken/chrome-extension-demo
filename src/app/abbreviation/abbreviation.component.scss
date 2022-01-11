@@ -1,0 +1,15 @@
+.abbreviation-wrapper {
+  width: 280px;
+  background-color: #d5c3f7;
+  padding: 10px;
+
+  .p-field * {
+    display: block;
+  }
+
+  .abbreviation-input {
+    height: 40px;
+    border-radius: 6px;
+    margin-bottom: 5px;
+  }
+}
